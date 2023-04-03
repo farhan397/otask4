@@ -1,0 +1,140 @@
+.CompactCard {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex:0.5;
+  min-width:230px;
+  min-height:290px;
+  /* background-color: rgb(233, 241, 238); */
+  
+
+  position: relative;
+  
+  }
+  .fullcard{
+    align-items:center;
+  justify-content:center;
+  flex:0.5;
+  min-width:280px;
+  min-height:290px;
+  background-color: rgb(208, 247, 232);
+  
+  margin:5px;
+  padding-bottom: 10px;
+
+  }
+
+
+
+  /* .CompactCard:hover {
+    box-shadow: none !important;
+  }
+   */
+  /* radial bar */
+  .radialBar {
+    display:flex;
+  align-items:center;
+  justify-content:center;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  }
+  .CompactCard > img {
+    width: 280px;
+    height: 270px; 
+  }
+  
+  
+  .roverclass > span {
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+  }
+  .dateclass > span {
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  /* sideDetail*/
+
+  .ExpandedCard1 {
+    min-width: 400px;
+    min-height: 400PX;
+   
+    background-color: rgb(73, 214, 160);
+    z-index: 9;
+    left: 13rem;
+    border-radius: 1rem;
+    display: flex; 
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: space-around; */
+    padding: 1rem;
+  }
+  .ExpandedCard > img {
+    width: 400px;
+    height: 270px; 
+  }
+  .ExpandedCard > span:nth-of-type(1) {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    text-shadow: 0px 0px 15px white;
+  }
+  .ExpandedCard > span:nth-of-type(2) {
+    color: rgb(236, 236, 236);
+    font-size: 15px;
+  }
+ select1::-ms-expand {
+    display: none;
+  }
+  .select1 {
+    position: relative;
+    display: flex;
+    
+    width: 10em;
+    height: 2em;
+    line-height: 2;
+    /* background: #5c6664; */
+    /* overflow: hidden; */
+    border-radius: .25em;
+  
+    
+  }
+
+  
+  .select1::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #c9c9d3;
+    cursor:pointer;
+    pointer-events:none;
+    transition:.25s all ease;
+  }
+  .select1:hover::after {
+    color: #474a4a;
+  }
+  select {
+    /* -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    appearance:none; */
+    outline:0;
+    box-shadow:none;
+    border:1!important;
+   
+    
+    background:rgb(215, 230, 221); 
+    
+    flex: 1; 
+    color:black;
+    padding-left: 10px;
+    cursor:pointer;
+    font-size: 0.8em;
+    font-family: 'Open Sans', sans-serif; 
+  }
+  
