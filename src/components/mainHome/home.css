@@ -1,0 +1,82 @@
+/* Display image section */
+.image {
+  width: 100%;
+  height: 100px;
+
+}
+
+.image.selected {
+  opacity: 0.5;
+ 
+  border: 1px solid yellow;
+  transition: opacity 0.5s, border-color 0.5s;
+}
+/* End */
+
+
+
+.homeText {
+  display: flex;
+  width: 100%;
+}
+
+
+
+
+.imageContainer {
+  position: relative;
+}
+
+/* preview button section */
+
+.previewButton {
+  position: absolute;
+  background-color: transparent;
+ width: 0px;
+ height: 0px;
+  font-size: 50px;
+  top: 4%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  border: none;
+  color: rgb(121, 154, 170);
+
+}
+.imageContainer:hover .previewButton {
+  visibility: visible;
+}
+.show {
+  visibility: visible;
+}
+
+.hide {
+  visibility: hidden;
+}
+/* End */
+
+
+.imageChange {
+  width: 100%;
+  height: 100px;
+  -webkit-animation: rotate 1s linear 1;
+  -moz-animation: rotate 1s linear 1;
+  animation: rotate 1s linear 1;
+}
+
+@-moz-keyframes rotate {
+  100% {
+    -moz-transform: rotate(180deg);
+  }
+}
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(180deg);
+  }
+}
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "name": "moviesapp",
+  "name": "task-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,17 +8,24 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.3.4",
     "bootstrap": "^5.2.3",
-    "framer-motion": "^10.9.1",
+    "formik": "^2.2.9",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0",
-    "react-draggable": "^4.4.5",
     "react-icons": "^4.8.0",
+    "react-image-magnifiers": "^1.4.0",
+    "react-lazy-load-image-component": "^1.5.6",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^6.8.2",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "react-simple-image-viewer": "^1.2.2",
+    "redux": "^4.1.0",
+    "web-vitals": "^2.1.4",
+    "yup": "^1.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
+    "server": "json-server --watch array.json --port 5000",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

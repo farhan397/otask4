@@ -1,0 +1,49 @@
+.imageView {
+  width: 100px;
+  height: 100px;
+}
+
+.backButton {
+  border: 1px solid black;
+  border-radius: 50px;
+  margin: 2px;
+  padding: 4px 9px;
+  background-color: white;
+}
+
+.imageChangeGrid {
+  width: 100px;
+  height: 100px;
+  -webkit-animation: rotate 1s linear 1;
+  -moz-animation: rotate 1s linear 1;
+  animation: rotate 1s linear 1;
+}
+
+@-moz-keyframes rotate {
+  100% {
+    -moz-transform: rotate(180deg);
+  }
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(180deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
+
+.cardClass {
+
+  width: 7rem;
+  padding-top: 8px;
+  padding-left: 8px;
+  padding-right: 10px;
+  padding-bottom: 8px;
+}
